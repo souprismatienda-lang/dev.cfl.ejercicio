@@ -5,9 +5,10 @@ import { createRoot } from 'react-dom/client'
 import './css/general.css'
 //Componentes
 import Principal from './componentes/principal'
+import Objetos from './componentes/objetos'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Principal />
+    <Objetos />
   </StrictMode>,
 )
