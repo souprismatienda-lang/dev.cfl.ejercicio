@@ -56,7 +56,7 @@ export default function Objetos() {
     }
 
     var texto= "La ciudad de " + ciudad.nombre + " se encuentra en la provincia " + ciudad.provincia + ", tiene una población de " + ciudad.habitantes + " habitantes"
-    document.getElementById("informacion").innerHTML= texto;
+    //document.getElementById("informacion").innerHTML= texto;
     
     return(
         <>

@@ -1,14 +1,32 @@
 //Dependencias
-import { StrictMode } from 'react'
+import { Component, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createBrowserRouter } from 'react-router'
+import { RouterProvider } from 'react-router'
 //Estilos
 import './css/general.css'
 //Componentes
 import Principal from './componentes/principal'
 import Objetos from './componentes/objetos'
+import Header from './componentes/Header'
+import Footer from './componentes/footer'
+import ClaseForm from './componentes/claseform'
+
+const router = createBrowserRouter ([
+  {
+    path: "/",
+    Component: Objetos
+  },
+  {
+    path: "/claseform",
+    Component: ClaseForm
+  }
+]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Objetos />
+    <Header />
+    <RouterProvider router={router} />
+    <Footer />
   </StrictMode>,
 )
