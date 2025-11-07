@@ -12,6 +12,7 @@ import Header from './componentes/Header'
 import Footer from './componentes/footer'
 import ClaseForm from './componentes/claseform'
 import Pruebas from './componentes/prueba'
+import Hooks from './componentes/hooks'
 
 const router = createBrowserRouter ([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter ([
   {
     path: "/prueba",
     Component: Pruebas
+  },
+  {
+    path: "hooks",
+    Component: Hooks
   }
 ]);
 

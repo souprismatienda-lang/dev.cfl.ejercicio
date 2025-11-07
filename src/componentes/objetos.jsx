@@ -79,6 +79,8 @@ export default function Objetos() {
                 <p id="informacion"></p>
             </div>
         </div>
+        <h1>Pagina de inicio</h1>
+        <a href="./claseform">Link a clase formulario</a>
         </>
     )
 }
