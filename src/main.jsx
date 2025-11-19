@@ -1,42 +1,33 @@
-//Dependencias
-import { Component, StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import { createBrowserRouter } from 'react-router'
-import { RouterProvider } from 'react-router'
-//Estilos
-import './css/general.css'
-//Componentes
-import Principal from './componentes/principal'
-import Objetos from './componentes/objetos'
-import Header from './componentes/Header'
-import Footer from './componentes/footer'
-import ClaseForm from './componentes/claseform'
-import Pruebas from './componentes/prueba'
-import Hooks from './componentes/hooks'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter } from 'react-router';
+import { RouterProvider } from 'react-router';
 
-const router = createBrowserRouter ([
-  {
-    path: "/",
-    Component: Objetos
-  },
-  {
-    path: "/claseform",
-    Component: ClaseForm
-  },
-  {
-    path: "/prueba",
-    Component: Pruebas
-  },
-  {
-    path: "hooks",
-    Component: Hooks
-  }
-]);
+import "./css/general.css"
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Header />
-    <RouterProvider router={router} />
-    <Footer />
-  </StrictMode>,
+import HeaderNav from './componentes/headernav';
+import ContenidoDinamico from './componentes/contenido-dinamico';
+
+function ComponentePrincipal(){
+    return(
+        <h1>Hola Mundo</h1>
+    )
+}
+
+const rutasObjetos = createBrowserRouter([
+    {
+        path: "/",
+        Component: ComponentePrincipal
+    },
+    {
+        path: "/contenido-dinamico",
+        Component: ContenidoDinamico
+    }
+])
+
+createRoot(document.getElementById("root")).render(
+    <StrictMode>
+        <HeaderNav />
+        <RouterProvider router={rutasObjetos} />
+    </StrictMode>
 )

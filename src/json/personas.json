@@ -1,0 +1,38 @@
+[
+    {
+        "nombre":"Yesica",
+        "email":"yesi@gmail.com",
+        "curso":"programación",
+        "nota":"8"
+    },
+    {
+        "nombre":"Susana Gimenez",
+        "email":"susana@gmail.com",
+        "curso":"programación",
+        "nota":"8"
+    },
+    {
+        "nombre":"Ricardo Fort",
+        "email":"richard@gmail.com",
+        "curso":"manejo",
+        "nota":"4"
+    },
+    {
+        "nombre":"Pepe Argento",
+        "email":"pepe@gmail.com",
+        "curso":"actor",
+        "nota":"9"
+    },
+    {
+        "nombre":"Pepe Argento",
+        "email":"pepe@gmail.com",
+        "curso":"actor",
+        "nota":"9"
+    },
+    {
+        "nombre":"Pepe Argento",
+        "email":"pepe@gmail.com",
+        "curso":"actor",
+        "nota":"9"
+    }
+]
