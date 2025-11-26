@@ -1,0 +1,58 @@
+[
+    {
+        "titulo": "Alien",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepe",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "Robocop",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepi",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "Gato con botas",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "Shrek",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "Chucky",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "Chupy",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "El señor de los novillos",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    },
+    {
+        "titulo": "chapi",
+        "duracion": "Sci fi",
+        "genero": "2",
+        "director": "Pepin",
+        "imagen": "https://placehold.co/600x400/png"
+    }
+]

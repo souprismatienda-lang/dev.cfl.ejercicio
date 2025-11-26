@@ -1,22 +1,42 @@
-import listaPersonas from "../json/personas.json"
+import listaPersonas from '../json/personas.json'
+import listaPelis from '../json/peliculas.json'
 
 export default function ContenidoDinamico(){
+
+    function Ficha(){
+        return(
+            <div id='contenedorelementos' className='flex gap-4 [&_p]:m-0 flex-wrap'>
+                {
+                    listaPelis.map((peli, indice) => (
+                    <div id='elemento' key={indice} className='w-1/5 border border-black rounded-sm bg-gradient-to-r from-teal-200 to-teal-500 text-center'>
+                        <h4>{peli.titulo} </h4>
+                        <img className='w-full' src={peli.imagen} />
+                        <p>Duración: {peli.duracion} </p>
+                        <p>Genéro: {peli.genero} </p>
+                        <p>Director: {peli.director} </p>
+                    </div>
+                    ))
+                }
+            </div>
+        )
+    }
+
     return(
         <div>
-            <h2>Creación dinamica</h2>
-            <p>Utilizando las funcionalidades de React, podemos generar elementos html de manera automatica. Para esto utilizamos 2 cosas, una lista de objetos y la función map()</p>
+            <h2>Creacion dinamica</h2>
+            <p>Utilizando las funcionalidades de react, podemos generar elementos HTML de manera automatica. Para esto utilizamos 2 cosas, una lista de objetos y la funcion map()</p>
             <h3>JSON</h3>
-            <p>Es el acronimo de JavaScript Object Notation, es un formato que define objetos de JS de manera estandarizada. eSTOS ESTAN CONTENIDOS EN SU PROPIO ARCHIVO CON EXTENCION json y se pueden importar directamente a los componenente de React.</p>
-            <h3>Tabla dinamica</h3>
-            <p>En este ejemplo vamos a cargar una tabla con contenido de un archivo .json</p>
+            <p>Es el acronimo de JavaScript Objet Notation, es un formato que define objetos de JavaScript de manera estandarizada. Esos estan contenidos en su propio archivo con extension .json y se pueden importar directamente a los componentenes de react</p>
+            <h3>Tabla Dinamica</h3>
+            <p>En este ejemplo, vamos a cargar una tabla con contenido de un archivo .json</p>
             <div>
-                <table className="border border-b-blue-800 table-auto w-2xl [&_th]:border [&_td]:border [&_td]:px-1">
-                    <thead className="">
+                <table className='table-auto border border-b-emerald-400 w-2xl [&_th]:border [&_td]:border [&_td]:px-1'>
+                    <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Email</th>
-                            <th>Curso</th>
-                            <th>Nota</th>
+                            <th>email</th>
+                            <th>curso</th>
+                            <th>nota</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,6 +52,11 @@ export default function ContenidoDinamico(){
                         }
                     </tbody>
                 </table>
+            </div>
+            <h3>Contenedores Dinámicos</h3>
+            <p>No solamente podemos generar tablas, el contenido dinámico puede ser cualquier cosa, desde un tag p hasta un tag div con multiples elementos internos. Es importante primero definir una estructura estable, ya que el contenido se irá cargando de manera automatica.</p>
+            <div>
+                <Ficha></Ficha>
             </div>
         </div>
     )
