@@ -2,6 +2,17 @@ import listaPersonas from '../json/personas.json'
 import listaPelis from '../json/peliculas.json'
 
 export default function ContenidoDinamico(){
+function BarraDeNav(){
+    return(
+        <>
+        <button>Pagina 1</button>
+        <button>Pagina 2</button>
+        <button>Pagina 3</button>
+        <button>Pagina 4</button>
+        <button>Pagina 5</button>
+        </>
+    )
+}
 
     function Ficha(){
         return(
@@ -57,6 +68,15 @@ export default function ContenidoDinamico(){
             <p>No solamente podemos generar tablas, el contenido dinámico puede ser cualquier cosa, desde un tag p hasta un tag div con multiples elementos internos. Es importante primero definir una estructura estable, ya que el contenido se irá cargando de manera automatica.</p>
             <div>
                 <Ficha></Ficha>
+            </div>
+            <div>
+                <hr />
+                <section id='barranav'>
+                    <h2>Barra de Navegacion</h2>
+                    <div id='contenedornav'>
+                    <BarraDeNav />
+                    </div>
+                </section>
             </div>
         </div>
     )
